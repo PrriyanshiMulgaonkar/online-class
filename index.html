@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Class Booking</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="bg-dark text-light text-center py-3">
+        <h1>Online Class Booking</h1>
+    </header>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <form class="card h-100">
+                    <div id="result">
+                        <div class="card-header">
+                            <h2>Search Classes</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="class-input">Class Name</label>
+                                <input type="text" class="form-control" id="class-input" placeholder="Enter class name">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8 mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h2>Available Classes</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100" id="class1-card">
+                                    <div class="card-header">
+                                        <h3>Class 1</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Description of Class 1</p>
+                                        <ul class="list-unstyled">
+                                            <li>Time Slot 1</li>
+                                            <li>Time Slot 2</li>
+                                            <li>Time Slot 3</li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-block" id="class1-book-button">Book
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4" id="success-message-1" style="display:none;">
+                                <div class="alert alert-success" role="alert">
+                                    Booked successfully for Class 1!
+                                </div>
+                            </div>
+
+                            <script>
+                                var bookButton1 = document.getElementById('class1-book-button');
+                                var card1 = document.getElementById('class1-card');
+                                var successMessage1 = document.getElementById('success-message-1');
+
+                                bookButton1.addEventListener('click', function () {
+                                    card1.style.display = 'none';
+                                    successMessage1.style.display = 'block';
+                                });
+                            </script>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100" id="class2-card">
+                                    <div class="card-header">
+                                        <h3>Class 2</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Description of Class 2</p>
+                                        <ul class="list-unstyled">
+                                            <li>Time Slot 1</li>
+                                            <li>Time Slot 2</li>
+                                            <li>Time Slot 3</li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-block" id="class2-book-button">Book
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4" id="success-message-2" style="display:none;">
+                                <div class="alert alert-success" role="alert">
+                                    Booked successfully for Class 2!
+                                </div>
+                            </div>
+
+                            <script>
+                                var bookButton2 = document.getElementById('class2-book-button');
+                                var card2 = document.getElementById('class2-card');
+                                var successMessage2 = document.getElementById('success-message-2');
+
+                                bookButton2.addEventListener('click', function () {
+                                    card2.style.display = 'none';
+                                    successMessage2.style.display = 'block';
+                                });
+                            </script>
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100" id="class3-card">
+                                    <div class="card-header">
+                                        <h3>Class 3</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Description of Class 3</p>
+                                        <ul class="list-unstyled">
+                                            <li>Time Slot 1</li>
+                                            <li>Time Slot 2</li>
+                                            <li>Time Slot 3</li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-block" id="class3-book-button">Book
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4" id="success-message-3" style="display:none;">
+                                <div class="alert alert-success" role="alert">
+                                    Booked successfully for Class 3!
+                                </div>
+                            </div>
+
+                            <script>
+                                var bookButton3 = document.getElementById('class3-book-button');
+                                var card3 = document.getElementById('class3-card');
+                                var successMessage3 = document.getElementById('success-message-3');
+
+                                bookButton3.addEventListener('click', function () {
+                                    card3.style.display = 'none';
+                                    successMessage3.style.display = 'block';
+                                });
+                            </script>
+
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100" id="class4-card">
+                                    <div class="card-header">
+                                        <h3>Class 4</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Description of Class 4</p>
+                                        <ul class="list-unstyled">
+                                            <li>Time Slot 1</li>
+                                            <li>Time Slot 2</li>
+                                            <li>Time Slot 3</li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-block" id="class4-book-button">Book
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-4" id="success-message-4" style="display:none;">
+                                <div class="alert alert-success" role="alert">
+                                    Booked successfully for Class 4!
+                                </div>
+                            </div>
+
+                            <script>
+                                var bookButton4 = document.getElementById('class4-book-button');
+                                var card4 = document.getElementById('class4-card');
+                                var successMessage4 = document.getElementById('success-message-4');
+
+                                bookButton4.addEventListener('click', function () {
+                                    card4.style.display = 'none';
+                                    successMessage4.style.display = 'block';
+                                });
+                            </script>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-light text-center py-3">
+        <p>© 2023 Online Class Booking</p>
+    </footer>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const form = document.querySelector('form');
+        const cards = document.querySelectorAll('.card.h-100');
+        const searchResult = document.querySelector('#result');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const searchQuery = document.querySelector('#class-input').value.toLowerCase();
+            searchResult.innerHTML = ''; // clear any previous search results
+
+            let found = false;
+
+            cards.forEach(card => {
+                const header = card.querySelector('.card-header');
+                if (header && header.textContent.toLowerCase().includes(searchQuery)) {
+                    searchResult.appendChild(card.cloneNode(true));
+                    found = true;
+                }
+            });
+
+            if (!found) {
+                searchResult.innerHTML = '<p>No matching classes found.</p>';
+            }
+
+        });
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
